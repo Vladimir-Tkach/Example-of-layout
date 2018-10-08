@@ -61,7 +61,7 @@ p {
 }
 .hexagon_red::before,
 .hexagon_red::after {
-  background-color: #ff0036;
+  background-color: #ffee00;
 }
 .header_text_section {
   display: -webkit-box;
@@ -78,7 +78,7 @@ p {
   font-family: 'Roboto';
 }
 .header_text_section span {
-  color: #ff0036;
+  color: #ffee00;
 }
 .header_text_section p {
   line-height: 1.5rem;
@@ -129,7 +129,7 @@ header .container .center #icon_right {
 }
 header .container .center #icon_left:hover,
 header .container .center #icon_right:hover {
-  color: #ff0036;
+  color: #ffee00;
 }
 header .container .center #icon_left {
   left: 0;
@@ -212,7 +212,7 @@ header .nav ul li::after {
   width: 100%;
   height: 3px;
   opacity: 0;
-  background: #ff0036;
+  background: #ffee00;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -235,7 +235,7 @@ header .maintext h1 {
   color: aliceblue;
 }
 header .maintext h1 span {
-  color: #ff0036;
+  color: #ffee00;
 }
 header .maintext p {
   font-size: 1rem;
@@ -267,7 +267,7 @@ header .twobuttons input {
   cursor: pointer;
 }
 header .twobuttons input:hover {
-  background: #ff0036;
+  background: #ffee00;
 }
 header .twobuttons input:active {
   -webkit-transform: translateY(5px);
@@ -312,7 +312,7 @@ header .twobuttons input:active {
 }
 .section_1 .accordeon .active {
   position: relative;
-  color: #ff0036;
+  color: #ffee00;
   font-family: 'Roboto';
 }
 .section_1 .accordeon .active:before {
@@ -323,8 +323,8 @@ header .twobuttons input:active {
   line-height: 1.3rem;
   width: 20px;
   height: 20px;
-  border: #ff0036 solid 1px;
-  color: #ff0036;
+  border: #ffee00 solid 1px;
+  color: #ffee00;
   left: 10px;
   text-align: center;
   border-radius: 50%;
@@ -392,7 +392,7 @@ header .twobuttons input:active {
   text-transform: uppercase;
 }
 .section_2 a:hover {
-  color: #ff0036;
+  color: #ffee00;
 }
 .section_2 h2 {
   color: #fff;
@@ -536,13 +536,13 @@ header .twobuttons input:active {
 }
 .section_3 .block2 .left_h3:hover,
 .section_3 .block2 .right_h3:hover {
-  background: #ff0036;
+  background: #ffee00;
   color: aliceblue;
 }
 .section_3 .block2 .left_h3:hover::after,
 .section_3 .block2 .right_h3:hover::after {
   background: #fff;
-  color: #ff0036;
+  color: #ffee00;
 }
 .section_3 .block2 .left_h3 {
   -webkit-box-pack: end;
@@ -629,7 +629,7 @@ header .twobuttons input:active {
   cursor: pointer;
 }
 .section_3 .block2 .greybutton input:hover {
-  background: #ff0036;
+  background: #ffee00;
 }
 .section_3 .block2 .greybutton input:active {
   -webkit-transform: translateY(5px);
@@ -743,7 +743,7 @@ header .twobuttons input:active {
   margin: 0 auto;
 }
 .section_4 .slide .active {
-  background: #ff0036;
+  background: #ffee00;
 }
 .section_4 .slide_cube {
   cursor: pointer;
@@ -767,7 +767,7 @@ header .twobuttons input:active {
   transition: .2s;
 }
 .section_5 .worker:hover {
-  color: #ff0036;
+  color: #ffee00;
 }
 .section_5 .img {
   position: relative;
@@ -808,7 +808,7 @@ header .twobuttons input:active {
   -webkit-clip-path: polygon(0% 50%, 26% 0%, 72% 0%, 100% 50%, 72% 100%, 26% 100%);
           clip-path: polygon(0% 50%, 26% 0%, 72% 0%, 100% 50%, 72% 100%, 26% 100%);
   background: #fff;
-  color: #ff0036;
+  color: #ffee00;
 }
 .section_5 .links_worker .flaticon-facebook-logo,
 .section_5 .links_worker .flaticon-twitter-logo-silhouette,
@@ -873,7 +873,7 @@ header .twobuttons input:active {
 .section_6 .span_oval_3,
 .section_6 .span_oval_4 {
   position: relative;
-  color: #ff0036;
+  color: #ffee00;
 }
 .section_6 .span_oval_1::before,
 .section_6 .span_oval_2::before,
@@ -895,10 +895,10 @@ header .twobuttons input:active {
 .section_6 .span_oval_2::before,
 .section_6 .span_oval_3::before,
 .section_6 .span_oval_4::before {
-  border-top: #ff0036 solid 3px;
-  border-left: #ff0036 solid 3px;
+  border-top: #ffee00 solid 3px;
+  border-left: #ffee00 solid 3px;
   border-right: #e0e0e0 solid 3px;
-  border-bottom: #ff0036 solid 3px;
+  border-bottom: #ffee00 solid 3px;
 }
 .section_6 .span_oval_1::after,
 .section_6 .span_oval_2::after,
@@ -907,7 +907,7 @@ header .twobuttons input:active {
   border-top: transparent solid 3px;
   border-left: transparent solid 3px;
   border-right: transparent solid 3px;
-  border-bottom: #ff0036 solid 3px;
+  border-bottom: #ffee00 solid 3px;
 }
 .section_6 .span_oval_1::before {
   -webkit-transform: rotateZ(8deg);
@@ -1016,7 +1016,7 @@ header .twobuttons input:active {
 .section_7 .flaticon-pencil-striped:hover,
 .section_7 .flaticon-smartphone-call:hover,
 .section_7 .flaticon-wordpress-logo:hover {
-  background: #ff0036;
+  background: #ffee00;
   color: #fff;
 }
 .section_8 {
@@ -1059,7 +1059,7 @@ header .twobuttons input:active {
 }
 .section_8 .price p:hover {
   color: #fff;
-  background: #ff0036;
+  background: #ffee00;
 }
 .section_8 .price sub {
   text-transform: lowercase;
@@ -1082,7 +1082,7 @@ header .twobuttons input:active {
   transition: .2s;
 }
 .section_8 input:hover {
-  background: #ff0036;
+  background: #ffee00;
 }
 .section_9 {
   position: relative;
@@ -1121,7 +1121,7 @@ header .twobuttons input:active {
           align-items: center;
 }
 .section_9 .container-fluid .flaticon-twitter-logo-silhouette {
-  color: #ff0036;
+  color: #ffee00;
   font-size: 3rem;
 }
 .section_9 .container-fluid p {
@@ -1164,7 +1164,7 @@ header .twobuttons input:active {
   transition: .2s;
 }
 .section_9 .container input:hover {
-  background: #ff0036;
+  background: #ffee00;
 }
 .section_9 .container a {
   display: block;
@@ -1246,14 +1246,14 @@ header .twobuttons input:active {
           clip-path: polygon(0% 50%, 26% 0%, 72% 0%, 100% 50%, 72% 100%, 26% 100%);
   background: transparent;
   font-size: 2rem;
-  color: #ff0036;
+  color: #ffee00;
   line-height: 4rem;
   -webkit-transition: .2s;
   transition: .2s;
 }
 .section_10 i:hover {
   color: #fff;
-  background: #ff0036;
+  background: #ffee00;
 }
 .section_10 p {
   color: #fff;
@@ -1355,7 +1355,7 @@ header .twobuttons input:active {
   transition: .2s;
 }
 .section_11 form #submit:hover {
-  background: #ff0036;
+  background: #ffee00;
 }
 footer {
   height: 80px;

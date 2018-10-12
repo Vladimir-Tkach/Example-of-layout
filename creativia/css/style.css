@@ -1272,10 +1272,8 @@ header .twobuttons input:active {
 }
 .section_11 .container-fluid .row {
   width: 100%;
-  height: 72%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  height: 100%;
+  padding-top: 10rem;
 }
 .section_11 .container-fluid .row .form {
   position: absolute;
@@ -1465,6 +1463,71 @@ footer h3 {
 .flaticon-minus:before {
   content: "\f115";
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    background-position: 0 0, -200px -150px;
+  }
+  header #icon_left {
+    left: -20%;
+  }
+  header #icon_right {
+    left: 90%;
+  }
+  .section_2 {
+    height: 600px;
+    padding-top: 0;
+  }
+  .section_2 .container-fluid {
+    height: 348px;
+  }
+  .section_2 .img:nth-child(2n-1),
+  .section_2 .img:nth-child(2n) {
+    width: 25%;
+    height: 50%;
+  }
+  .section_3 .block2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section_3 .block2 .left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .section_3 .block2 .right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .section_3 .block2 .middle {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .section_3 .block2 .middle:before,
+  .section_3 .block2 .middle:after {
+    bottom: 21.6%;
+  }
+  .section_5 .worker {
+    margin-bottom: 1rem;
+  }
+  .section_8 .plan {
+    margin-bottom: 2rem;
+  }
+  .section_9 .container-fluid {
+    height: 160px;
+  }
+  .section_9 .img_article {
+    height: 210px;
+  }
+  .section_10 {
+    height: 310px;
+  }
+  .section_11 .row .form {
+    right: 0;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
   header,
   section,
@@ -1510,8 +1573,8 @@ footer h3 {
   .section_10 {
     height: 330px;
   }
-  .section_11 .container-fluid .row .form {
-    top: -3.5%;
+  .section_11 .container-fluid .row {
+    padding-top: 9rem;
   }
   .section_11 form h3 {
     margin: 1rem 0;

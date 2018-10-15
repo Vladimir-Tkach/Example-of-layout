@@ -145,13 +145,13 @@ header{
 		padding: 0;
 		height: 163%;
 		background: url('../img/1.png') no-repeat;
-		background-position: 0 -8px;
+		background-position: 0 -22px;
+		background-size: 100%;
 		h2{
 			color: @textcol;
 			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 			font-weight: 500;
 			height: 100%;
-			padding-right: 2.25rem;
 			margin: 1rem 0 0 0;
 		}
 	}
@@ -198,7 +198,7 @@ header{
 					top: -21px;
 				}
 				&:after{
-					bottom: -21px;
+					bottom: -12px;
 				}
 				&:hover:before,
 				&:hover::after{
@@ -250,9 +250,7 @@ header{
 	}
 }
 
-
 //=============== section_1 =======================
-
 .section_1{
 	
 	.block2{
@@ -260,6 +258,9 @@ header{
 			font-size: 1rem;
 			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 			line-height: 1.5rem;
+		}
+		img{
+			width: 100%;
 		}
 	}
 	.accordeon{
@@ -349,9 +350,7 @@ header{
 	}
 }
 
-
 //=============== section_2 =======================
-
 .section_2{
 	position: relative;
 	height: 1070px;
@@ -398,13 +397,13 @@ header{
 	}
 	.img{
 		position: relative;
+		height: 50%;
 		&:nth-child(2n-1){
 			width: 28.571428%;
-			height: 50%;
+			display: block;
 		}
 		&:nth-child(2n){
 			width: 21.4285%;
-			height: 50%;
 		}
 		img{
 			width: 100%;
@@ -443,10 +442,7 @@ header{
 	
 }
 
-
-
 //=============== section_3 =======================
-
 .section_3{
 	padding-top: 4rem;
 	padding-bottom: 5rem;
@@ -570,10 +566,7 @@ header{
 	}
 }
 
-
-
 //=============== section_4 =======================
-
 .section_4{
 	position: relative;
 	padding: 4rem 0 5rem 0;
@@ -668,8 +661,6 @@ header{
 		background: @whiteColor;
 	}
 }
-
-
 
 //=============== section_5 =======================
 .section_5{
@@ -823,9 +814,7 @@ header{
 		&:after{ transform: rotateZ(-8deg) }
 	}
 }
-
-
-    
+  
 //=============== section_7 =======================
 .section_7{
 	position: relative;
@@ -886,7 +875,6 @@ header{
 	}
 
 }
-
 
 //=============== section_8 =======================
 .section_8{
@@ -957,7 +945,6 @@ header{
 	}
 
 }
-
 
 //=============== section_9 =======================
 .section_9{
@@ -1119,8 +1106,6 @@ header{
 	}
 }
 
-
-
 //=============== section_11 =======================
 .section_11{
 	position: relative;
@@ -1132,10 +1117,8 @@ header{
 		position: relative;
 		.row{
 			width: 100%;
-			height: 72%;
-			position: absolute;
-			bottom: 0;
-			right: 0;
+			height: 100%;
+			padding-top: 10rem;
 			.form{
 				position: absolute;
 				right: 15%;
@@ -1216,7 +1199,6 @@ footer{
 	}
 }
 
-
 //================ПОДКЛЮЧЕНИЕ ШРИФТОВЫХ ИКОНОК Flaticon================
 
 @font-face {
@@ -1273,13 +1255,336 @@ footer{
 @media (max-width: 575.98px) {  }
 
 // Малые девайсы («ландшафтные», >= 575px)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) {
+	header{
+		background-position: 0 0, -290px -150px;
+		position: relative;
+		.button-menu{
+			//border: red solid 1px;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			span{
+				position: relative;
+				display: block;
+				width: 90%;
+				height: 3px;
+				margin-top: 49%;
+				background: #cfcfcf;
+				border-radius: 5px; 
+				&:before,
+				&::after{
+					position: absolute;
+					content: "";
+					width: 100%;
+					height: 3px;
+					background: #e0e0e0;
+				}
+				&:before{
+					top: -10px;
+				}
+				&::after{
+					top: 10px;
+				}
+			}
+		 }
+
+		 //два класс отвечающие за показ и стрытие бокового меню
+		.activemenu{
+			right: 0%; 
+		}
+		.inactivemenu{
+			right: -100%;
+		}
+		.nav{
+			border: red solid 1px;
+			width: 50%;
+			height: 500px;
+			background: #000;
+			z-index: 5;
+			position: fixed;
+			top: 7%; 
+			//right: -100%;  
+			transition: 0.5s;
+			
+			ul{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				li{
+					&:before,
+					&:after{
+						background: transparent;
+					}
+				}
+			}
+			span{
+				color: #e0e0e0;
+				position: absolute;
+				top: 0;
+				left: -25px;
+				font-family: sans-serif; 
+				font-size: 1.5rem;
+			}
+		}
+		#icon_left{
+			left: -20%;
+		}
+		#icon_right{
+			left: 90%;
+		}
+	}
+
+	.section_2{
+		height: 740px;
+		padding-top: 0;
+		.container-fluid{
+			height: 400px;
+		}
+		.img{
+			&:nth-child(2n-1),
+			&:nth-child(2n){
+				width: 25%; 
+				height: 50%;
+			}
+		}
+	}
+	.section_3{
+		.block2{
+			display: flex;
+			.left, .right{
+				h3{font-size: .8rem;}
+			}
+			.left{
+				order: 1;
+			}
+			.right{
+				order: 2;
+			}
+			.middle{
+				order: 3;
+				&:before, &:after{
+					bottom: 38.3%;
+				}
+			}
+		}
+	}
+	.section_4{
+		.four_logo{
+			.logo_1_block,
+			.logo_2_block,
+			.logo_3_block,
+			.logo_4_block{
+				width: 190px;
+				height: 120px;
+				background: @whiteColor;
+				margin: 1.2rem 0.6rem;
+				box-shadow: inset 0px 0px 60px 20px #4949494d;
+			}
+		}
+	}
+	.section_5{
+		.worker{
+			margin-bottom: 1rem;
+		}
+	}
+	.section_6{
+		h3{
+			font-size: 3rem;
+		}
+	.span_oval_1,
+		.span_oval_2,
+		.span_oval_3,
+		.span_oval_4{
+			&::before,
+			&::after{
+				width: 110px;
+				height: 110px;
+			}
+		}
+	}
+	.section_8{
+		.plan{
+			margin-bottom: 2rem;
+		}
+	} 
+	.section_9{
+		.container-fluid{
+			height: 120px;
+			.flaticon-twitter-logo-silhouette {
+				font-size: 2.5rem;
+		  }
+		}
+		.img_article{
+			height: 170px;
+		} 
+	}
+	.section_10{
+		padding-top: 2rem;
+		height: 290px;
+	}
+}
 
 // Средние девайсы («таблетки», >= 768px) 
-@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) {  
+
+	header{
+		background-position: 0 0, -200px -150px;
+
+		#icon_left{
+			left: -20%;
+		}
+		#icon_right{
+			left: 90%;
+		}
+	}
+
+	.section_2{
+		height: 600px; 
+		padding-top: 0;
+		.container-fluid{
+			height: 348px;
+		}
+		
+		.img{
+			&:nth-child(2n-1),
+			&:nth-child(2n){
+				width: 25%; 
+				height: 50%;
+			}
+		}
+	}
+
+	.section_3{
+		.block2{
+			display: flex;
+			.left{
+				order: 1;
+			}
+			.right{
+				order: 2;
+			}
+			.middle{
+				order: 3;
+				&:before, &:after{
+					bottom: 21.6%;
+				}
+			}
+		}
+	}
+	.section_5{
+		.worker{
+			margin-bottom: 1rem;
+		}
+	}
+	.section_8{
+		.plan{
+			margin-bottom: 2rem;
+		}
+	}
+	.section_9{
+		.container-fluid{
+			height: 160px;
+		}
+		.img_article{
+			height: 210px;
+		}
+	}
+	.section_10{
+		height: 310px;
+	}
+
+	.section_11{
+		.row{
+			.form{
+				right: 0;
+			}
+		}
+	}
+}
 
 // Большие девайсы (большие десктопы, >= 992px)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+header, 
+section, 
+footer{
+	width: 100%;
+	max-width: 1199px;
+	margin: 0 auto;
+	}
+  
+	.section_2{
+		padding-top: 0;
+		.img{
+			&:nth-child(2n){width: 25%;	}
+			&:nth-child(2n-1){width: 25%;	}
+		}
+	}
+	
+	.section_3 .block2{
+		h3{
+			font-size: 1rem;
+		}
+		.greybutton{
+			bottom: -26%;
+		}
+		.middle{
+			&:before, &:after{
+				bottom: 24.6%;
+			}
+		}
+	} 
 
-// Большие девайсы (большие десктопы, >= 1200px)
-@media (min-width: 1200px) {  }
+	.section_4{
+		.four_logo{
+			.logo_1_block,
+			.logo_2_block,
+			.logo_3_block,
+			.logo_4_block{
+				width: 200px;
+			}
+		}
+	}
+	.section_8{
+		.plan{
+			p{
+				font-size: .9rem;
+			}
+		}
+		.price{
+			p{
+				font-size: 3.5rem;
+			}
+		}
+	} 
+	.section_9{
+		.container-fluid{
+			height: 215px;
+		}
+	}
+	.section_10{
+		height: 330px;
+	}
+	.section_11{
+		.container-fluid{
+			.row{
+				padding-top: 9rem;
+			}
+		}
+		form{	
+			h3 {
+				margin: 1rem 0;
+			}
+			input, textarea{
+				width: 80%;
+				margin-bottom: 1rem; 
+				font-size: .9rem;
+				padding: 0.9rem 1rem;
+			}
+		}
+	}
+
+
+}

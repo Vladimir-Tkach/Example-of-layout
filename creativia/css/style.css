@@ -1463,6 +1463,172 @@ footer h3 {
 .flaticon-minus:before {
   content: "\f115";
 }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    background-position: 0 0, -290px -150px;
+    position: relative;
+  }
+  header .button-menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  header .button-menu span {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 3px;
+    margin-top: 49%;
+    background: #cfcfcf;
+    border-radius: 5px;
+  }
+  header .button-menu span:before,
+  header .button-menu span::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #e0e0e0;
+  }
+  header .button-menu span:before {
+    top: -10px;
+  }
+  header .button-menu span::after {
+    top: 10px;
+  }
+  header .activemenu {
+    right: 0%;
+  }
+  header .inactivemenu {
+    right: -100%;
+  }
+  header .nav {
+    border: red solid 1px;
+    width: 50%;
+    height: 500px;
+    background: #000;
+    z-index: 5;
+    position: fixed;
+    top: 7%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .nav ul li:before,
+  header .nav ul li:after {
+    background: transparent;
+  }
+  header .nav span {
+    color: #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+  }
+  header #icon_left {
+    left: -20%;
+  }
+  header #icon_right {
+    left: 90%;
+  }
+  .section_2 {
+    height: 740px;
+    padding-top: 0;
+  }
+  .section_2 .container-fluid {
+    height: 400px;
+  }
+  .section_2 .img:nth-child(2n-1),
+  .section_2 .img:nth-child(2n) {
+    width: 25%;
+    height: 50%;
+  }
+  .section_3 .block2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section_3 .block2 .left h3,
+  .section_3 .block2 .right h3 {
+    font-size: .8rem;
+  }
+  .section_3 .block2 .left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .section_3 .block2 .right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .section_3 .block2 .middle {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .section_3 .block2 .middle:before,
+  .section_3 .block2 .middle:after {
+    bottom: 38.3%;
+  }
+  .section_4 .four_logo .logo_1_block,
+  .section_4 .four_logo .logo_2_block,
+  .section_4 .four_logo .logo_3_block,
+  .section_4 .four_logo .logo_4_block {
+    width: 190px;
+    height: 120px;
+    background: #fff;
+    margin: 1.2rem 0.6rem;
+    box-shadow: inset 0px 0px 60px 20px #4949494d;
+  }
+  .section_5 .worker {
+    margin-bottom: 1rem;
+  }
+  .section_6 h3 {
+    font-size: 3rem;
+  }
+  .section_6 .span_oval_1::before,
+  .section_6 .span_oval_2::before,
+  .section_6 .span_oval_3::before,
+  .section_6 .span_oval_4::before,
+  .section_6 .span_oval_1::after,
+  .section_6 .span_oval_2::after,
+  .section_6 .span_oval_3::after,
+  .section_6 .span_oval_4::after {
+    width: 110px;
+    height: 110px;
+  }
+  .section_8 .plan {
+    margin-bottom: 2rem;
+  }
+  .section_9 .container-fluid {
+    height: 120px;
+  }
+  .section_9 .container-fluid .flaticon-twitter-logo-silhouette {
+    font-size: 2.5rem;
+  }
+  .section_9 .img_article {
+    height: 170px;
+  }
+  .section_10 {
+    padding-top: 2rem;
+    height: 290px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
   header {
     background-position: 0 0, -200px -150px;

@@ -12,4 +12,14 @@
 		$(this).next().not(":visible").show(500).prev().addClass("active");
 	});
 
+	$(".button-menu").click(function(){
+		$(".nav").show(1000).toggleClass("activemenu inactivemenu");
+	});
+	$(".spanX").click(function(){
+		$(".nav").show(1000).toggleClass("activemenu inactivemenu");
+	});
+	$("ul li a").click(function(){
+		$(".nav").show(1000).toggleClass("activemenu inactivemenu");
+	});
+
 });

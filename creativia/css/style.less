@@ -1252,7 +1252,190 @@ footer{
 
 
 // Экстрамалые девайсы («портретные телефоны», < 576px)
-@media (max-width: 575.98px) {  }
+@media (max-width: 575.98px) {
+	.hexagon,
+	.hexagon_red{
+		&:before,
+		&::after{width: 460%;}
+		&:before{left: -420%;}
+		&:after{right: -420%;}
+	}
+	header{
+		background-position: 0 0, -290px -150px;
+		position: relative;
+		.button-menu{
+			//border: red solid 1px;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			span{
+				position: relative;
+				display: block;
+				width: 90%;
+				height: 3px;
+				margin-top: 49%;
+				background: #cfcfcf;
+				border-radius: 5px; 
+				&:before,
+				&::after{
+					position: absolute;
+					content: "";
+					width: 100%;
+					height: 3px;
+					background: #e0e0e0;
+				}
+				&:before{
+					top: -10px;
+				}
+				&::after{
+					top: 10px;
+				}
+			}
+		 }
+
+		 //два класс отвечающие за показ и стрытие бокового меню
+		.activemenu{
+			right: 0%; 
+		}
+		.inactivemenu{
+			right: -100%;
+		}
+		//////////////////
+		.nav{
+			//border: red solid 1px;
+			width: 50%;
+			height: 500px;
+			border-radius: 5px;
+			background: rgba(0, 0, 0, 0.849);
+			z-index: 5;
+			position: fixed;
+			top: 7%; 
+			//right: -100%;  
+			transition: 0.5s;
+			
+			ul{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				li{
+					a{color: #fff;}
+					&:before,
+					&:after{
+						background: transparent;
+					}
+				}
+			}
+			span{
+				color: #e0e0e0;
+				position: absolute;
+				top: 0;
+				left: -25px;
+				font-family: sans-serif; 
+				font-size: 1.5rem;
+			}
+		}
+		.container .center #icon_left{
+			left: 25px; 
+		}
+		.container .center #icon_right{
+			right: 50px;
+		}
+	}
+
+	.section_2{
+		height: 550px;
+		padding-top: 0;
+		.container-fluid{
+			height: 250px; 
+		}
+		.img{
+			&:nth-child(2n-1),
+			&:nth-child(2n){
+				width: 25%; 
+				height: 50%;
+			}
+		} 
+	}
+	.section_3{
+		.block2{
+			display: flex;
+			.left, .right{
+				h3{font-size: .8rem;}
+			}
+			.left{
+				order: 1;
+			}
+			.right{
+				order: 2;
+			}
+			.middle{
+				order: 3;
+				&:before, &:after{
+					bottom: 33.8%;
+				}
+			}
+		}
+	}
+	.section_4{
+		.four_logo{
+			.logo_1_block,
+			.logo_2_block,
+			.logo_3_block,
+			.logo_4_block{
+				width: 190px;
+				height: 120px;
+				background: @whiteColor;
+				margin: 1.2rem 0.6rem;
+				box-shadow: inset 0px 0px 60px 20px #4949494d;
+			}
+		}
+	}
+	.section_5{
+		.worker{
+			margin-bottom: 1rem;
+		}
+	}
+	.section_6{
+		h3{
+			font-size: 3rem;
+		}
+	.span_oval_1,
+		.span_oval_2,
+		.span_oval_3,
+		.span_oval_4{
+			&::before,
+			&::after{
+				width: 110px;
+				height: 110px;
+			}
+		}
+	}
+	.section_8{
+		.plan{
+			margin-bottom: 2rem;
+		}
+	} 
+	.section_9{
+		.container-fluid{
+			height: 120px;
+			.flaticon-twitter-logo-silhouette {
+				font-size: 2.5rem;
+		  }
+		}
+		.img_article{
+			height: 170px;
+		} 
+	}
+	.section_10{
+		padding-top: 2rem;
+		height: 290px;
+	}
+	.section_11{
+		.adress_block{display: none;}
+	}
+}
 
 // Малые девайсы («ландшафтные», >= 575px)
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1298,11 +1481,13 @@ footer{
 		.inactivemenu{
 			right: -100%;
 		}
+		//////////////////
 		.nav{
-			border: red solid 1px;
+			//border: red solid 1px;
 			width: 50%;
 			height: 500px;
-			background: #000;
+			border-radius: 5px;
+			background: rgba(0, 0, 0, 0.849);
 			z-index: 5;
 			position: fixed;
 			top: 7%; 
@@ -1314,6 +1499,7 @@ footer{
 				flex-direction: column;
 				justify-content: space-between;
 				li{
+					a{color: #fff;}
 					&:before,
 					&:after{
 						background: transparent;
@@ -1424,6 +1610,9 @@ footer{
 	.section_10{
 		padding-top: 2rem;
 		height: 290px;
+	}
+	.section_11{
+		.adress_block{display: none;}
 	}
 }
 

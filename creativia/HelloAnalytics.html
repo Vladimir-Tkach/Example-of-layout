@@ -156,10 +156,27 @@ gapi.analytics.ready(function() {
       }
     }
   });
+  
+  var dataChart3 = new gapi.analytics.googleCharts.DataChart({
+    query: {
+      metrics: 'ga:goal1Value',
+      dimensions: 'ga:date',
+      'start-date': '2019-04-27',
+      'end-date': 'today'
+    },
+    chart: {
+      container: 'chart-container2',
+      type: 'LINE',
+      options: {
+        width: '100%'
+      }
+    }
+  });
 
   viewSelector.on('change', function(ids) {
     dataChart.set({query: {ids: ids}}).execute();
      dataChart2.set({query: {ids: ids}}).execute();
+    dataChart3.set({query: {ids: ids}}).execute();
   });
 
 });

@@ -160,7 +160,7 @@ gapi.analytics.ready(function() {
   
   var dataChart3 = new gapi.analytics.googleCharts.DataChart({
     query: {
-      metrics: 'ga:goal1Starts',
+      metrics: 'ga:goal1Starts' / 'ga:sessions',
       dimensions: 'ga:date',
       'start-date': '2019-04-27',
       'end-date': 'today'
